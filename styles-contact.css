@@ -1,0 +1,175 @@
+/*This is my 201 Contact Web Page Project using Eric Meyer's reset at the top of my page -- your CSS starts on line 56 */
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ---------- This is the beginning of my 201 Contact Web Page Project ------------ */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url("images/sf background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.center {
+    width: 60%;
+	padding: 2%;
+    margin: 100px auto;
+ 	background: rgba(103, 148, 103, 0.5); /*this uses opacity of 40% for the background color*/
+	text-align: center;
+	border-radius: 50px 0px 50px 0px;
+
+	/* BEGINNING OF FADE IN */ 
+	animation: fadeIn 2s;
+	-webkit-animation: fadeIn 2s;
+	-moz-animation: fadeIn 2s;
+	-o-animation: fadeIn 2s;
+	-ms-animation: fadeIn 2s;
+	/*border: 4px dashed white; */
+
+}
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+	@-moz-keyframes fadeIn {
+		0% { opacity: 0; }
+	100% { opacity: 1;}
+}
+	
+	@-webkit-keyframes fadeIn {
+   0% { opacity: 0; }
+   100% { opacity: 1;}
+	}
+	@-o-keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+	}
+	@-moz-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1;}
+}
+/* END OF FADE IN */	
+
+
+
+#logo {
+	width: 70%;
+    margin-bottom: 16px;
+	border-radius: 0px;
+	text-align: center;
+}
+
+h1 {
+	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-family:'New Spirit Bold', serif;
+	font-size: 2em;
+    margin: 20px auto 10px auto;
+    color: #fff;
+}
+
+h2 {
+	 /* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-family:'Gill Sans Nova Semibold', sans-serif;
+	font-size: 1.5em;
+    line-height: 1.4;
+    color: #fff;
+    padding: 0px 0px;
+    margin: 0px auto 12px auto;
+}
+
+p {
+	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.2em;
+    line-height: 1.6;
+    color: #fff;
+}
+
+nav{
+	font-family:'New Spirit Semibold', serif;
+	font-size: 1.2em;
+	width: 80%; /* FOR RESPONSIVENESS */
+	margin: 0 auto;
+	/* border: dasheed turquoise; */
+	border-width: 3px 0;
+	text-align: center;
+	margin-top: 2em;
+ }   
+
+ nav li{
+	display: inline;
+}
+
+nav a{
+	display: inline-block;
+	padding: 10px;
+}
+
+a{
+	color: rgb(18, 47, 32);
+	text-decoration: black;
+	font-weight: bold;
+}
+
+a:hover{
+	color: black;
+	background: rgba(93, 219, 139, 0.5); 
+}
