@@ -60,20 +60,31 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background-image: url("images/sf background.jpg");
+  background-image: url("images/casette bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  text-align: center;
+
+  /* BEGINNING OF FADE IN */ 
+	animation: fadeIn 2s;
+	-webkit-animation: fadeIn 2s;
+	-moz-animation: fadeIn 2s;
+	-o-animation: fadeIn 2s;
+	-ms-animation: fadeIn 2s;
+	/*border: 4px dashed white; */
 }
 
 .center {
     width: 60%;
 	padding: 2%;
     margin: 100px auto;
- 	background: rgba(103, 148, 103, 0.5); /*this uses opacity of 40% for the background color*/
+ 	background: rgba(135, 177, 86, 1); /*this uses opacity of 40% for the background color*/
 	text-align: center;
-	border-radius: 50px 0px 50px 0px;
+	border-radius: 50px 50px 50px 50px;
+	
+	
 
 	/* BEGINNING OF FADE IN */ 
 	animation: fadeIn 2s;
@@ -108,19 +119,24 @@ html, body {
 }
 /* END OF FADE IN */	
 
+/* #noellesalt {
+	width: 30%;
+	border: 0px;
+	text-align: center;
+} */
 
-
-#logo {
-	width: 70%;
+#carlogo {
+	width: 30%;
+	margin-top: 10%;
     margin-bottom: 16px;
-	border-radius: 0px;
+	border: 0px;
 	text-align: center;
 }
 
 h1 {
 	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
-	font-family:'New Spirit Bold', serif;
-	font-size: 2em;
+	font-family:'Ganache', serif;
+	font-size: 4.4em;
     margin: 20px auto 10px auto;
     color: #fff;
 }
@@ -169,7 +185,7 @@ a{
 	font-weight: bold;
 }
 
-a:hover{
+ a:hover { 
 	color: black;
-	background: rgba(93, 219, 139, 0.5); 
-}
+	background: rgba(93, 219, 139, 0.5);} 
+
